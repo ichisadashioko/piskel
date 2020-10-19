@@ -58,7 +58,7 @@ $().ready(function(){
 	});
 
 	$(document).on('click', '#toggle-dnd-state', function(evt) {
-		
+
 		body.toggleClass('dnd-state1');
 	});
 
@@ -70,6 +70,6 @@ $().ready(function(){
 	  $(".canvas .draw-area").attr('class', 'draw-area draw-area-'+ str);
 	});
 
-	
+
 
 });
