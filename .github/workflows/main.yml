@@ -29,7 +29,9 @@ jobs:
         run: npm install
       - name: build desktop binaries
         run: npm run build
-      - name: remove node_modules
-        run: rm -rf node_modules
+      - name: remove generated files
+        run: |
+          rm -rf node_modules
+          rm -rf cache
       - name: show directory structure
         run: tree .
