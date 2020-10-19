@@ -22,11 +22,13 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.1.2
         with:
-          node-version: 12.x
+          node-version: 7.4.0
       - name: install system dependencies
         run: sudo apt install -y tree
       - name: install npm dependencies
-        run: npm install
+        run: |
+          npm install -g grunt-cli
+          npm install
       - name: build desktop binaries
         run: npm run build
       - name: remove generated files
