@@ -38,3 +38,23 @@ jobs:
           rm -rf prod
       - name: show directory structure
         run: tree .
+
+      - uses: actions/upload-artifact@v2.2.0
+        with:
+          name: piskel-linux32
+          path: dest/desktop/piskel/linux32
+
+      - uses: actions/upload-artifact@v2.2.0
+        with:
+          name: piskel-linux64
+          path: dest/desktop/piskel/linux64
+
+      - uses: actions/upload-artifact@v2.2.0
+        with:
+          name: piskel-win32
+          path: dest/desktop/piskel/win32
+
+      - uses: actions/upload-artifact@v2.2.0
+        with:
+          name: piskel-win64
+          path: dest/desktop/piskel/win64
