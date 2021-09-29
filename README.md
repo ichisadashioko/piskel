@@ -68,3 +68,7 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
+
+## Notes
+
+- Ubuntu 20.04 users need to install `libgconf-2-4` to use the offline binaries.
